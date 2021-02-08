@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta char set="UTF-8">
+	<title>
+	EXP4
+	</title>
+</head>	
+<body>
+<h1>Narasimhan - EDM18B040</h1>
+<h2>Synthesis report - Super Register</h2>
+<p>#-----------------------------------------------------------<br>
+# Vivado v2015.4 (64-bit)<br>
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015<br>
+# IP Build 1412968 on Wed Nov 18 10:19:19 MST 2015<br>
+# Start of session at: Mon Feb 08 16:56:19 2021<br>
+# Process ID: 1852<br>
+# Current directory: E:/Studies/Sem 6/VLSI lab/project_5/project_5.runs/synth_1<br>
+# Command line: vivado.exe -log super_reg.vds -mode batch -messageDb vivado.pb -notrace -source super_reg.tcl<br>
+# Log file: E:/Studies/Sem 6/VLSI lab/project_5/project_5.runs/synth_1/super_reg.vds<br>
+# Journal file: E:/Studies/Sem 6/VLSI lab/project_5/project_5.runs/synth_1\vivado.jou<br>
+#-----------------------------------------------------------<br>
+source super_reg.tcl -notrace<br>
+Command: synth_design -top super_reg -part xc7z010iclg225-1L<br>
+Starting synth_design<br>
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010i'<br>
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010i'<br>
+---------------------------------------------------------------------------------<br>
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 269.906 ; gain = 98.715<br>
+---------------------------------------------------------------------------------<br>
+INFO: [Synth 8-638] synthesizing module 'super_reg' [E:/Studies/Sem 6/VLSI lab/project_5/project_5.srcs/sources_1/new/super_reg.v:3]<br>
+INFO: [Synth 8-638] synthesizing module 'mux_81' [E:/Studies/Sem 6/VLSI lab/project_5/project_5.srcs/sources_1/new/mux_81.v:1]<br>
+WARNING: [Synth 8-567] referenced signal 'in' should be on the sensitivity list [E:/Studies/Sem 6/VLSI lab/project_5/project_5.srcs/sources_1/new/mux_81.v:7]<br>
+INFO: [Synth 8-256] done synthesizing module 'mux_81' (1#1) [E:/Studies/Sem 6/VLSI lab/project_5/project_5.srcs/sources_1/new/mux_81.v:1]<br>
+INFO: [Synth 8-638] synthesizing module 'd_ff' [E:/Studies/Sem 6/VLSI lab/project_5/project_5.srcs/sources_1/new/d_ff.v:1]<br>
+INFO: [Synth 8-256] done synthesizing module 'd_ff' (2#1) [E:/Studies/Sem 6/VLSI lab/project_5/project_5.srcs/sources_1/new/d_ff.v:1]<br>
+INFO: [Synth 8-256] done synthesizing module 'super_reg' (3#1) [E:/Studies/Sem 6/VLSI lab/project_5/project_5.srcs/sources_1/new/super_reg.v:3]<br>
+---------------------------------------------------------------------------------<br>
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 303.270 ; gain = 132.078<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 303.270 ; gain = 132.078<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Start Loading Part and Timing Information<br>
+---------------------------------------------------------------------------------<br>
+Loading part: xc7z010iclg225-1L<br>
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L<br>
+---------------------------------------------------------------------------------<br>
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 303.270 ; gain = 132.078<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 311.500 ; gain = 140.309<br>
+---------------------------------------------------------------------------------</p>
+
+<p>Report RTL Partitions: <br>
++-+--------------+------------+----------+<br>
+| |RTL Partition |Replication |Instances |<br>
++-+--------------+------------+----------+<br>
++-+--------------+------------+----------+<br>
+No constraint files found.<br>
+---------------------------------------------------------------------------------<br>
+Start RTL Component Statistics <br>
+---------------------------------------------------------------------------------<br>
+Detailed RTL Component Info : <br>
++---XORs : <br>
+ 2 Input 1 Bit XORs := 2 <br>
++---Registers : <br>
+ 1 Bit Registers := 8 <br>
++---Muxes : <br>
+ 2 Input 1 Bit Muxes := 4 <br>
+---------------------------------------------------------------------------------<br>
+Finished RTL Component Statistics <br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Start RTL Hierarchical Component Statistics <br>
+---------------------------------------------------------------------------------<br>
+Hierarchical RTL Component report <br>
+Module super_reg <br>
+Detailed RTL Component Info : <br>
++---XORs : <br>
+ 2 Input 1 Bit XORs := 2 <br>
+Module d_ff <br>
+Detailed RTL Component Info : <br>
++---Registers : <br>
+ 1 Bit Registers := 2 <br>
++---Muxes : <br>
+ 2 Input 1 Bit Muxes := 1 <br>
+---------------------------------------------------------------------------------<br>
+Finished RTL Hierarchical Component Statistics<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Start Part Resource Summary<br>
+---------------------------------------------------------------------------------<br>
+Part Resources:<br>
+DSPs: 80 (col length:40)<br>
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)<br>
+---------------------------------------------------------------------------------<br>
+Finished Part Resource Summary<br>
+---------------------------------------------------------------------------------<br>
+Start Parallel Synthesis Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 436.637 ; gain = 265.445<br>
+---------------------------------------------------------------------------------<br>
+Start Cross Boundary Optimization<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 437.914 ; gain = 266.723<br>
+---------------------------------------------------------------------------------<br>
+Finished Parallel Reinference : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 437.914 ; gain = 266.723</p>
+
+<p>Report RTL Partitions: <br>
++-+--------------+------------+----------+<br>
+| |RTL Partition |Replication |Instances |<br>
++-+--------------+------------+----------+<br>
++-+--------------+------------+----------+<br>
+No constraint files found.<br>
+---------------------------------------------------------------------------------<br>
+Start Area Optimization<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Finished Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 456.438 ; gain = 285.246<br>
+---------------------------------------------------------------------------------<br>
+Finished Parallel Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 456.438 ; gain = 285.246</p>
+
+<p>Report RTL Partitions: <br>
++-+--------------+------------+----------+<br>
+| |RTL Partition |Replication |Instances |<br>
++-+--------------+------------+----------+<br>
++-+--------------+------------+----------+<br>
+---------------------------------------------------------------------------------<br>
+Start Timing Optimization<br>
+---------------------------------------------------------------------------------<br>
+No constraint files found.<br>
+---------------------------------------------------------------------------------<br>
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 456.438 ; gain = 285.246<br>
+---------------------------------------------------------------------------------</p>
+
+<p>Report RTL Partitions: <br>
++-+--------------+------------+----------+<br>
+| |RTL Partition |Replication |Instances |<br>
++-+--------------+------------+----------+<br>
++-+--------------+------------+----------+<br>
+---------------------------------------------------------------------------------<br>
+Start Technology Mapping<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 456.438 ; gain = 285.246<br>
+---------------------------------------------------------------------------------<br>
+Finished Parallel Technology Mapping Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 456.438 ; gain = 285.246</p>
+
+<p>Report RTL Partitions: <br>
++-+--------------+------------+----------+<br>
+| |RTL Partition |Replication |Instances |<br>
++-+--------------+------------+----------+<br>
++-+--------------+------------+----------+<br>
+Finished Parallel Synthesis Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 456.438 ; gain = 285.246<br>
+---------------------------------------------------------------------------------<br>
+Start IO Insertion<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Start Flattening Before IO Insertion<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Finished Flattening Before IO Insertion<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Start Final Netlist Cleanup<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Finished Final Netlist Cleanup<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 456.438 ; gain = 285.246<br>
+---------------------------------------------------------------------------------</p>
+
+<p>Report Check Netlist: <br>
++------+------------------+-------+---------+-------+------------------+<br>
+| |Item |Errors |Warnings |Status |Description |<br>
++------+------------------+-------+---------+-------+------------------+<br>
+|1 |multi_driven_nets | 0| 0|Passed |Multi driven nets |<br>
++------+------------------+-------+---------+-------+------------------+<br>
+---------------------------------------------------------------------------------<br>
+Start Renaming Generated Instances<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 456.438 ; gain = 285.246<br>
+---------------------------------------------------------------------------------</p>
+
+<p>Report RTL Partitions: <br>
++-+--------------+------------+----------+<br>
+| |RTL Partition |Replication |Instances |<br>
++-+--------------+------------+----------+<br>
++-+--------------+------------+----------+<br>
+---------------------------------------------------------------------------------<br>
+Start Rebuilding User Hierarchy<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 456.438 ; gain = 285.246<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Start Renaming Generated Ports<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 456.438 ; gain = 285.246<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Start Handling Custom Attributes<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 456.438 ; gain = 285.246<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Start Renaming Generated Nets<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 456.438 ; gain = 285.246<br>
+---------------------------------------------------------------------------------<br>
+---------------------------------------------------------------------------------<br>
+Start Writing Synthesis Report<br>
+---------------------------------------------------------------------------------</p>
+
+<p>Report BlackBoxes: <br>
++-+--------------+----------+<br>
+| |BlackBox name |Instances |<br>
++-+--------------+----------+<br>
++-+--------------+----------+</p>
+
+<p>Report Cell Usage: <br>
++------+------+------+<br>
+| |Cell |Count |<br>
++------+------+------+<br>
+|1 |BUFG | 1|<br>
+|2 |LUT1 | 1|<br>
+|3 |LUT3 | 1|<br>
+|4 |LUT4 | 2|<br>
+|5 |LUT5 | 9|<br>
+|6 |LUT6 | 7|<br>
+|7 |MUXF7 | 2|<br>
+|8 |FDRE | 8|<br>
+|9 |IBUF | 10|<br>
+|10 |OBUF | 4|<br>
++------+------+------+</p>
+
+<p>Report Instance Areas: <br>
++------+---------+-------+------+<br>
+| |Instance |Module |Cells |<br>
++------+---------+-------+------+<br>
+|1 |top | | 45|<br>
+|2 | dff0 |d_ff | 8|<br>
+|3 | dff1 |d_ff_0 | 7|<br>
+|4 | dff2 |d_ff_1 | 8|<br>
+|5 | dff3 |d_ff_2 | 7|<br>
++------+---------+-------+------+<br>
+---------------------------------------------------------------------------------<br>
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 456.438 ; gain = 285.246<br>
+---------------------------------------------------------------------------------<br>
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.<br>
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 456.438 ; gain = 242.000<br>
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 456.438 ; gain = 285.246<br>
+INFO: [Project 1-571] Translating synthesized netlist<br>
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement<br>
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds<br>
+INFO: [Project 1-570] Preparing netlist for logic optimization<br>
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).<br>
+INFO: [Project 1-111] Unisim Transformation Summary:<br>
+No Unisim elements were transformed.</p>
+
+<p>INFO: [Common 17-83] Releasing license: Synthesis<br>
+15 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.<br>
+synth_design completed successfully<br>
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 515.336 ; gain = 327.277<br>
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.220 . Memory (MB): peak = 515.336 ; gain = 0.000<br>
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 08 16:56:52 2021...<br>
+</p>
+</body>
+</html>
